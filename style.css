@@ -389,4 +389,158 @@ header {
 
 /* project section */
 
+.projects {
+    padding: 80px 112px;
+    background-color: #ffffff;
+}
 
+.project-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 48px;
+}
+
+.project-heading h2:first-of-type {
+    font-family: 'Poppins', serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #A87C4D;
+}
+
+.project-heading h2:last-of-type {
+    font-family: 'Alegreya', serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+}
+
+.project-content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header-left img {
+    object-fit: contain;
+}
+
+.header-left h3 {
+    font-family: 'Alegreya', serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.project-content-header a {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-secondary{
+    display: flex;
+    gap: 8px;
+    background-color: #A87C4D;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 24px;
+    border-radius: 30px;
+    border: none;
+    height: 52px;
+    width: 173px;
+    text-align: left;
+}
+
+.btn-secondary-footer {
+    background-color: #A87C4D;
+    padding: 14px;
+    border-radius: 30px;
+}
+
+.project-content-main{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.project-content-main p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: regular;
+    color: #5C5552;
+    line-height: auto;
+    text-align: left;
+}
+
+.project-content-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tool {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    width: 286px;
+    height: 48px;
+    background-color: #F7F0F5;
+    padding: 12px 24px;
+    gap: 8px;
+}
+
+.tool img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.tool p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.footer-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
+
+.project-footer {
+    max-width: 50%;
+}
+
+.project-footer .tool {
+    width: 176.67px;
+    height: 48px;
+}
