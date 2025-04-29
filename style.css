@@ -29,6 +29,7 @@ a {
   font-family: 'alegreya', serif;
   font-size: 21px;
   font-weight: 500;
+  color: #5C5552;
 }
 
 /* header */
@@ -36,6 +37,7 @@ header {
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
+    left: 0;
     z-index: 1000;
 }
 
@@ -128,7 +130,6 @@ header {
     font-family: 'Poppins', sans-serif;
     font-size: 48px;
     font-weight: bold;
-    margin-bottom: 1rem;
 }
 
 .hero-text h1 span {
@@ -136,10 +137,11 @@ header {
 }
 
 .hero-text h2{
-    font-family: 'alegreya', serif;
+    font-family: 'Alegreya', serif;
     font-size: 64px;
     font-weight: 500;
     max-width: 13ch;
+    color: #000000;
 }
 
 
@@ -867,6 +869,29 @@ header {
 
 /* footer */
 .footer{
-    padding-top: 48px;
+    padding-top: 58px;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 28px;
+}
+
+.footer-links{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.link{
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #ffffff;
+    width: 44px;
+    height: 44px;
+}
+
+.link img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
