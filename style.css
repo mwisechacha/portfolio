@@ -24,10 +24,7 @@ body{
 }
 
 .container {
-    width: 100%;
-    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 16px;
   }
 
 a {
@@ -42,7 +39,7 @@ a {
 /* header */
 header {
     position: fixed;
-    padding: 20px 80px;
+    padding: 20px 0px 0 0px;
     z-index: 1000;
     background-color: transparent;
     width: 100%;
@@ -54,6 +51,9 @@ header {
     margin: 0 auto;
     left: 0;
     right: 0;
+    @media(max-width: 1400px){
+        padding: 20px 80px;
+    }
 }
 
 .navbar {
@@ -197,9 +197,15 @@ header {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 80px 112px;
+    padding: 80px 0px;
     background-color: #ffffff;
+    max-width: 1280px;
+    margin: 0 auto;
+    @media(max-width: 1400px){
+        padding: 80px 112px;
+    }
 }
+
 
 .about-section {
     display: flex;
@@ -289,6 +295,9 @@ header {
 .experience {
     background-color: #ffffff;
     padding: 80px 0;
+    @media(max-width: 1400px){
+        padding: 80px 112px;
+    }
 }
 
 .experience-heading{
@@ -415,10 +424,14 @@ header {
 }
 
 /* project section */
-
 .projects {
-    padding: 80px 112px;
+    padding: 80px 0;
     background-color: #ffffff;
+    max-width: 1280px;
+    margin: 0 auto;
+    @media(max-width: 1400px){
+        padding: 80px 112px;
+    }
 }
 
 .project-heading {
@@ -584,8 +597,13 @@ header {
     display: flex;
     flex-direction: column;
     gap: 80px;
-    padding: 80px 0 80px 112px;
+    padding: 80px 0;
     background-color: #ffffff;
+    max-width: 1280px;
+    margin: 0 auto;
+    @media(max-width: 1400px){
+        padding: 80px 112px;
+    }
 }
 
 .articles-heading {
@@ -731,18 +749,19 @@ header {
     fill: #646464;
 }
 
-.nav-btn:hover {
-    /* background-color: #A87C4D; */
-}
-
 /* quote section */
 .quote {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 112px;
+    padding: 80px 0;
     background-color: #ffffff;
     position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    @media(max-width: 1400px){
+        padding: 80px 112px;
+    }
 }
 
 .quote-container{
@@ -895,9 +914,14 @@ header {
 /* footer */
 .footer{
     padding-top: 58px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 0px;
+    padding-left: 0px;
     padding-bottom: 28px;
+    max-width: 1280px;
+    margin: 0 auto;
+    @media(max-width: 1400px){
+        padding: 58px 80px 28px 80px;
+    }
 }
 
 .footer-links{
@@ -918,132 +942,4 @@ header {
     width: 24px;
     height: 24px;
     object-fit: contain;
-}
-
-@media(min-width: 786px) and (max-width: 1024px) {
-  
-}
-
-@media(max-width: 786px) {
-    /* header */
-    header {
-        backdrop-filter: blur(9.05px);
-        top: 0;
-    }
-
-    .nav-links{
-        display: none;
-    }
-
-    .hero {
-        display: flex;
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 20px;
-    }
-
-    .hero-text{
-        align-items: center;
-    }
-
-    .hero-text p{
-        max-width: 40ch;
-    }
-
-    /* about section */
-    .about {
-        padding: 40px;
-        flex-direction: column;
-    }
-
-    .about-section {
-        gap: 12px;
-    }
-
-    .about-section h2:last-of-type {
-        max-width: 80ch;
-    }
-
-    .about-section p {
-        max-width: 100%;
-        line-height: 1.7;
-    }
-
-    .external-links {
-        flex-direction: row;
-        padding: 20px 0;
-        gap: 24px;
-        justify-content: space-around;
-    }
-
-    .timeline p{
-        white-space: nowrap;
-    }
-
-    .timeline-content.left{
-        padding-right: 50px;
-    }
-
-    .timeline-content.right{
-        padding-left: 50px;
-    }
-    .timeline-item.left .timeline-icon {
-        left: 90%;
-    }
-    .timeline-item.right .timeline-icon {
-        right: 90%;
-    }
-
-    .projects {
-        padding: 40px 40px;
-    }
-
-    .project-content-header a{
-        font-size: 0;
-    }
-
-    .btn-secondary {
-        padding: 20px;
-        border-radius: 30px;  
-        gap: 0px; 
-        width: 0px;
-        height: 0px;
-        justify-content: center;    
-    }
-
-    .header-left h3 {
-        /* text-align: center; */
-        white-space: nowrap;
-    }
-
-    .footer-card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 60px;
-    }
-
-    .project-footer {
-        max-width: 100%;
-    }
-
-    .articles {
-        padding: 40px 40px;
-    }
-
-    .articles-heading {
-        padding-bottom: 0;
-    }
-
-    .articles-navigation{
-        padding-right: 0px;
-    }
-
-    .quote {
-        padding: 40px 40px;
-    }
-    .quote-container h4 {
-        max-width: 100%;
-        font-size: 36px;
-    }
 }
