@@ -51,8 +51,12 @@ header {
     margin: 0 auto;
     left: 0;
     right: 0;
-    @media(max-width: 1400px){
+    @media (max-width: 1400px){
         padding: 20px 80px;
+    }
+    @media (max-width: 768px) {
+        padding: 20px 2rem;
+        
     }
 }
 
@@ -67,6 +71,9 @@ header {
     font-family: 'Poppins', sans-serif;
     font-size: 32px;
     font-weight: bold;
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
 }
 
 .nav-links {
@@ -75,6 +82,9 @@ header {
     gap: 39px;
     margin: 0;
     padding: 0;
+    @media(max-width: 768px) {
+        display: none;
+    }
 }
 
 .nav-links li {
@@ -100,6 +110,10 @@ header {
     font-size: 16px;
     font-weight: 500;
     transition: all 0.3s ease;
+    @media (max-width: 768px) {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
 }
 
 .btn-primary:hover{
@@ -123,6 +137,10 @@ header {
     padding: 112px 2rem 2rem;
     z-index: 2;
     overflow: hidden;
+    @media (min-width: 320px) and (max-width: 768px){
+        flex-direction: column-reverse;
+        height: auto;
+    }
 }
 
 .hero-content {
@@ -148,12 +166,21 @@ header {
     display: flex;
     flex-direction: column; 
     gap: 48px;
+    @media (max-width: 768px) {
+        align-items: center;
+        text-align: center;
+        gap: 24px; 
+    }
 }
 
 .hero-text h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 48px;
     font-weight: bold;
+    @media (max-width: 768px) {
+        font-size: 32px;
+        text-align: center;
+    }
 }
 
 .hero-text h1 span {
@@ -166,6 +193,13 @@ header {
     font-weight: 500;
     max-width: 13ch;
     color: #000000;
+    @media (max-width: 768px) {
+        font-size: 48px;
+        text-align: center;
+    }
+    @media (max-width: 480px) {
+        font-size: 32px;
+    }
 }
 
 
@@ -175,6 +209,10 @@ header {
     font-weight: regular;
     line-height: 1.5;
     max-width: 28ch;
+    @media (max-width: 768px) {
+        font-size: 20px;
+        text-align: center; 
+    }
 }
 
 .hero-text .btn-primary {
@@ -189,6 +227,13 @@ header {
     height: 56px;
     width: 292px;
     text-align: center;
+    @media (max-width: 768px) {
+        padding: 10px 16px;
+        font-size: 16px;
+        width: 200px;
+        height: 46px;
+        
+    }
 }   
 
 /* about section */
@@ -203,6 +248,10 @@ header {
     margin: 0 auto;
     @media(max-width: 1400px){
         padding: 80px 112px;
+    }
+    @media (max-width: 768px) {
+        padding: 80px 2rem;
+        flex-direction: column;
     }
 }
 
@@ -227,6 +276,11 @@ header {
     max-width: 35ch;
     width: 825px;
     color: #000000;
+    @media (max-width: 768px) {
+        font-size: 32px;
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 .about-section p {
@@ -235,6 +289,12 @@ header {
     font-weight: 400;
     line-height: 1.62;
     width: 825px;
+    @media (max-width: 768px) {
+        font-size: 18px;
+        width: 100%;
+        /* max-width: ; */
+        
+    }
 }
 
 /* external links */
@@ -244,6 +304,11 @@ header {
     gap: 48px;
     align-items: flex-start;
     padding: 16px 48px;
+    @media (max-width: 768px) {
+        padding: 16px 0rem;
+        flex-direction: row;
+        gap: 24px;  
+    }
 }
 
 .links{
@@ -254,6 +319,11 @@ header {
     gap: 16px;
     width: 153px;
     height: 143px;
+    @media (max-width: 768px) {
+        padding: 16px 1.5rem;
+        width: 100px;
+        height: auto;
+    }
 }
 
 .external-links a{
@@ -274,13 +344,22 @@ header {
     width: 40px;
     height: 40px;
     object-fit: contain;
+    @media (max-width: 768px) {
+        width: 24px;
+        height: 24px;
+        
+    }
 }
 
 .external-links a p:first-of-type {
     font-family: 'Alegreya', serif;
     font-size: 21px;
     font-weight: bold;
-    text-align: center; 
+    text-align: center;
+    @media (max-width: 768px) {
+        font-size: 12px;
+        
+    } 
 }
 
 .external-links a p:last-of-type {
@@ -289,6 +368,9 @@ header {
     font-size: 16px;
     color: #5C5552;
     text-align: center; 
+    @media (max-width: 768px) {
+        font-size: 10px;  
+    }
 }
 
 /* experience section */
@@ -297,6 +379,9 @@ header {
     padding: 80px 0;
     @media(max-width: 1400px){
         padding: 80px 112px;
+    }
+    @media (max-width: 768px) {
+        padding: 40px 2rem;     
     }
 }
 
@@ -307,6 +392,7 @@ header {
     gap: 6px;
     padding-bottom: 48px;
 }
+
 .experience-heading h2{
     text-align: center;
 }
@@ -323,6 +409,10 @@ header {
     font-size: 48px;
     font-weight: 500;
     color: #000000;
+    @media (max-width: 768px) {
+        font-size: 32px;
+        
+    }
 }
 
 /* timeline */
@@ -357,6 +447,10 @@ header {
 
 .timeline-item.right{
     left: 49.5%;
+    @media (max-width: 768px) {
+        left: 50%;
+        
+    }
 }
 
 .timeline-item.left .timeline-content {
@@ -374,19 +468,28 @@ header {
     position: absolute;
     top: 20px;
     z-index: 1;
+    @media (max-width: 768px) {
+        width: 40px;
+        height: 40px;  
+        
+    }
 }
 
 .timeline-item.left .timeline-icon {
-    left: 95%;
+    left: 88%;
 }
 .timeline-item.right .timeline-icon {
-    right: 95%;
+    right: 88%;
 }
 
 .timeline-icon img{
     width: 40px;
     height: 40px;
     object-fit: contain;
+    @media (max-width: 768px) {
+        width: 24px;
+        height: 24px;  
+    }
 }
 
 .timeline-content {
@@ -398,11 +501,17 @@ header {
 .timeline-content.left{
     padding-top: 10px;
     padding-right: 80px;
+    @media (max-width: 768px) {
+        padding-right: 25px;  
+    }
 }
 
 .timeline-content.right{
     padding-top: 10px;
     padding-left: 80px;
+    @media (max-width: 768px) {
+        padding-left: 25px;  
+    }
 }
 
 .timeline-content:hover {
@@ -414,6 +523,9 @@ header {
     font-size: 24px;
     font-weight: bold;
     color: #000000;
+    @media (max-width: 768px) {
+        font-size: 20px; 
+    }
 }
 
 .timeline-content p {
@@ -421,6 +533,9 @@ header {
     font-size: 18px;
     font-weight: regular;
     color: #5C5552;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
 }
 
 /* project section */
@@ -431,6 +546,12 @@ header {
     margin: 0 auto;
     @media(max-width: 1400px){
         padding: 80px 112px;
+    }
+    @media (max-width: 768px) {
+        padding: 40px 4rem;     
+    }
+    @media (max-width: 480px) {
+        padding: 40px 2rem;     
     }
 }
 
@@ -446,6 +567,12 @@ header {
     font-size: 24px;
     font-weight: 500;
     color: #A87C4D;
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
+    @media (max-width: 480px) {
+        font-size: 18px;
+    }
 }
 
 .project-heading h2:last-of-type {
@@ -453,6 +580,10 @@ header {
     font-size: 48px;
     font-weight: 500;
     color: #000000;
+    @media (max-width: 768px) {
+        font-size: 32px;
+        white-space: nowrap; 
+    }
 }
 
 .project-container {
@@ -472,6 +603,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 768px) {
+        gap: 24px;
+        justify-content: space-between;
+        
+    }
 }
 
 .header-left{
@@ -489,6 +625,10 @@ header {
     font-size: 32px;
     font-weight: 500;
     color: #000000;
+    @media (max-width: 768px) {
+        font-size: 24px;
+        
+    }
 }
 
 .project-content-header a {
@@ -499,6 +639,9 @@ header {
     font-weight: 500;
     color: white;
     text-decoration: none;
+    @media (max-width: 768px) {
+        font-size: 0;
+    }
 }
 
 .btn-secondary{
@@ -515,6 +658,13 @@ header {
     height: 52px;
     width: 173px;
     text-align: left;
+    @media (max-width: 768px) {
+        padding: 14px;
+        gap: 0;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .btn-secondary-footer {
@@ -536,6 +686,10 @@ header {
     color: #5C5552;
     line-height: auto;
     text-align: left;
+    @media (max-width: 768px) {
+        font-size: 16px;
+        
+    }
 }
 
 .project-content-tools {
@@ -578,6 +732,10 @@ header {
     flex-direction: row;
     align-items: center;
     gap: 60px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .project-footer {
@@ -585,6 +743,11 @@ header {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    @media(max-width: 768px) {
+        max-width: 100%;
+        width: 100%;
+        
+    }
 }
 
 .project-footer .tool {
@@ -603,6 +766,19 @@ header {
     margin: 0 auto;
     @media(max-width: 1400px){
         padding: 80px 112px;
+        gap: 40px;
+    }
+    @media (max-width: 768px) {
+        padding: 40px 2rem; 
+        gap: 20px;    
+    }
+    @media (max-width: 480px) {
+        padding: 40px 2rem; 
+        gap: 20px;    
+    }
+    @media (max-width: 320px) {
+        padding: 40px 1rem;
+        gap: 20px;     
     }
 }
 
@@ -625,6 +801,22 @@ header {
     font-size: 48px;
     font-weight: 500;
     color: #000000;
+    @media (max-width: 768px) {
+        font-size: 32px;
+        
+    }
+    @media (max-width: 480px) {
+        font-size: 32px;
+        
+    }
+    @media (max-width: 320px) {
+        font-size: 24px;
+        
+    }
+    @media (max-width: 280px) {
+        font-size: 18px;
+        
+    }
 }
 
 .articles-container {
@@ -649,6 +841,18 @@ header {
     transition: transform 0.3s ease;
     position: relative;
     z-index: 1;
+    @media (max-width: 768px) {
+        width: 100%;
+        height: auto;
+    }
+    @media (max-width: 480px) {
+        width: 100%;
+        height: auto;
+    }
+    @media (max-width: 320px) {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .articles-card:hover {
@@ -660,6 +864,18 @@ header {
     height: 300px;
     border-radius: 30px 30px 0 0;
     object-fit: cover;
+    @media (max-width: 768px) {
+        height: 200px;
+    }
+    @media (max-width: 480px) {
+        height: 200px;
+    }
+    @media (max-width: 320px) {
+        height: 150px;
+    }
+    @media (max-width: 280px) {
+        height: 120px;
+    }
 }
 
 .article-content {
@@ -667,6 +883,7 @@ header {
     flex-direction: column;
     gap: 24px;
     padding: 24px;
+
 }
 
 .article-date {
@@ -674,6 +891,18 @@ header {
     font-size: 18px;
     font-weight: 500; 
     color: #646464;
+    @media (max-width: 768px) {
+        font-size: 16px;
+        
+    }
+    @media (max-width: 480px) {
+        font-size: 14px;
+        
+    }
+    @media (max-width: 320px) {
+        font-size: 12px;
+        
+    }
 }
 
 .article-content h3 {
@@ -681,6 +910,18 @@ header {
     font-size: 36px;
     font-weight: 500;
     color: #000000;
+    @media (max-width: 768px) {
+        font-size: 24px;
+        
+    }
+    @media (max-width: 480px) {
+        font-size: 24px;
+        
+    }
+    @media (max-width: 320px) {
+        font-size: 20px;
+        
+    }
 }
 
 .btn-article {
@@ -698,6 +939,12 @@ header {
     background-color: #ffffff;
     width: 171px;
     height: 52px;
+    @media (max-width: 768px) {
+        padding: 24px 12px;
+        font-size: 14px;
+        width: 140px;
+        height: 40px;
+    }
 }
 
 .btn-article img {
@@ -712,6 +959,11 @@ header {
     align-self: flex-end;
     gap: 16px;
     padding-right: 112px;
+    @media (max-width: 768px) {
+        padding-right: 0;
+        justify-content: center;
+        
+    }
 }
 
 .nav-btn {
@@ -762,6 +1014,22 @@ header {
     @media(max-width: 1400px){
         padding: 80px 112px;
     }
+    @media (max-width: 768px) {
+        padding: 40px 2rem; 
+        
+    }
+    @media (max-width: 480px) {
+        padding: 40px 2rem; 
+        
+    }
+    @media (max-width: 320px) {
+        padding: 40px 1rem; 
+        
+    }
+    @media (max-width: 280px) {
+        padding: 40px 1rem; 
+        
+    }
 }
 
 .quote-container{
@@ -775,6 +1043,11 @@ header {
     left: 50%;
     transform: translateX(-50%);
     height: auto;
+    @media (max-width: 768px) {
+        width: 80px;
+        top: -20px;
+        
+    }
 }
 
 .quote-container h4 {
@@ -784,6 +1057,22 @@ header {
     color: #000000;
     text-align: center;
     max-width: 80ch;
+    @media (max-width: 768px) {
+        font-size: 32px;
+        
+    }
+    @media (max-width: 480px) {
+        font-size: 24px;
+        
+    }
+    @media (max-width: 320px) {
+        font-size: 20px;
+        
+    }
+    @media (max-width: 280px) {
+        font-size: 18px;
+        
+    }
 }
 
 .quote-container p {
@@ -793,6 +1082,22 @@ header {
     font-weight: mixed;
     text-align: center;
     color: #433633;
+    @media (max-width: 768px) {
+        font-size: 24px; 
+        padding-top: 40px;  
+    }
+    @media (max-width: 480px) {
+        font-size: 24px; 
+        padding-top: 40px;  
+    }
+    @media (max-width: 320px) {
+        font-size: 18px; 
+        padding-top: 20px;  
+    }
+    @media (max-width: 280px) {
+        font-size: 16px; 
+        padding-top: 20px;  
+    }
 }
 
 .footer-bg{
@@ -805,27 +1110,54 @@ header {
 /* contact section */
 .contact-me {
     padding-top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 48px;
+    @media (max-width: 1400px){
+        padding: 80px 112px;   
+    }
+    @media (max-width: 768px) {
+        padding: 40px 2rem; 
+        
+    }
+    @media (max-width: 480px) {
+        padding: 40px 2rem; 
+        
+    }
+    @media (max-width: 320px) {
+        padding: 40px 1rem; 
+        
+    }
+    @media (max-width: 280px) {
+        padding: 40px 1rem; 
+        
+    }
 }
 
 .contact-container {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 48px;
+    justify-content: center; */
+    /* gap: 48px; */
 }
 
 .contact-header h2 {
     font-family: 'Alegreya', serif;
     font-size: 48px;
+    padding-bottom: 20px;
     font-weight: 500;
     color: #000000;
     text-align: center;
+    @media (max-width: 768px) {
+        font-size: 32px;
+    }
+    @media (max-width: 480px) {
+        font-size: 32px;
+    }
+    @media (max-width: 320px) {
+        font-size: 24px;
+    }
+    @media (max-width: 280px) {
+        font-size: 20px;
+    }
 }
 
 .contact-content {
@@ -841,6 +1173,18 @@ header {
     gap: 18px;
     max-width: 640px;
     width: 100%;
+    @media (max-width: 768px) {
+        width: 100%;
+        
+    }
+    @media (max-width: 480px) {
+        width: 100%;
+        
+    }
+    @media (max-width: 320px) {
+        width: 100%;
+        
+    }
 }
 
 .form-group input{
@@ -855,6 +1199,18 @@ header {
     width: 311px;
     height: 56px;
     background-color: transparent;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+    @media (max-width: 480px) {
+        width: 100%;
+    }
+    @media (max-width: 320px) {
+        width: 100%;
+    }
+    @media (max-width: 280px) {
+        width: 100%;
+    }
 }
 
 .form-group input:focus{
@@ -895,20 +1251,50 @@ header {
     height: 56px;
     text-align: center;
     cursor: pointer;
+    @media (max-width: 768px) {
+        padding: 10px 16px;
+        font-size: 16px;
+        width: 100%;
+        
+    }
 }
 
 .form-group-a {
     display: flex;
     gap: 18px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
+    @media (max-width: 320px) {
+        flex-direction: column;
+    }
 }
 
 .form-group-c {
     display: flex;
     gap: 18px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
+    @media (max-width: 320px) {
+        flex-direction: column;
+    }
+    @media (max-width: 280px) {
+        flex-direction: column;
+    }
 }
 
 .form-group-c input{
     width: 334px;
+    @media(max-width: 768px) {
+        width: 100%;
+    }
 }
 
 /* footer */
@@ -920,7 +1306,7 @@ header {
     max-width: 1280px;
     margin: 0 auto;
     @media(max-width: 1400px){
-        padding: 58px 80px 28px 80px;
+        padding: 0px 40px 28px 40px;
     }
 }
 
@@ -928,18 +1314,48 @@ header {
     display: flex;
     align-items: center;
     gap: 16px;
+    @media (max-width: 768px) {
+        align-items: flex-start;
+        gap: 8px;
+    }
 }
 
 .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     padding: 10px;
     background-color: #ffffff;
     width: 44px;
     height: 44px;
+    @media (max-width: 768px) {
+        width: 40px;
+        height: 40px; 
+    }
+    @media (max-width: 480px) {
+        width: 36px;
+        height: 36px; 
+    }
 }
 
 .link img{
     width: 24px;
     height: 24px;
     object-fit: contain;
+    @media (max-width: 768px) {
+        width: 20px;
+        height: 20px;
+        
+    }
+    @media (max-width: 480px) {
+        width: 20px;
+        height: 20px;
+        
+    }
+    @media (max-width: 320px) {
+        width: 16px;
+        height: 16px;
+        
+    }
 }
