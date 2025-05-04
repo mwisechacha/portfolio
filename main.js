@@ -19,20 +19,33 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-prevBtn.addEventListener('click', () => {
-    articlesContainer.scrollBy({
-        left: -516, 
-        behavior: 'smooth'
+const carousel = document.getElementById("articles-container");
+
+
+const prev = document.getElementById("prev-article");
+const next = document.getElementById("next-article");
+const gap = 60;
+const cardWidth = () => carousel.children[0].clientWidth + gap;
+
+prev?.addEventListener("click", () => {
+    const scroll = cardWidth();
+    const offset = carousel.scrollLeft % scroll;
+    carousel.scrollTo({
+    left: carousel.scrollLeft - (offset === 0 ? scroll : offset),
+    behavior: "smooth",
     });
 });
 
-nextBtn.addEventListener('click', () => {
-    articlesContainer.scrollBy({
-        left: 516, 
-        behavior: 'smooth'
+next?.addEventListener("click", () => {
+    const scroll = cardWidth();
+    const offset = carousel.scrollLeft % scroll;
+    carousel.scrollTo({
+    left:
+        carousel.scrollLeft +
+        (offset > 0.9 * scroll ? scroll + offset : scroll - offset),
+    behavior: "smooth",
     });
 });
-
 
 form.addEventListener('submit', (event) => {
     event.preventDefault(); 

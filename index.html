@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angie | Portfolio</title>
+    <link rel="icon" href="images/logo-icon.png" type="icon">
+    <title>Angela Chacha: Data Science Portfolio</title>
+    <meta name="description" content="I turn raw data into intelligent solutions using machine learning. 
+    My experience spans supervised and unsupervised learning with hands-on experience in classification, 
+    regression, clustering, and association algorithms, each tailored to solve real world challenges with precision.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -326,7 +330,7 @@
                 <h2>Articles</h2>
                 <h2>Cool Stuff on Medium</h2>
             </div>
-            <div class="articles-container">
+            <div class="articles-container" id="articles-container">
                 <div class="articles-card">
                     <img src="images/article1.png" alt="article 1">
                     <div class="article-content">
@@ -373,10 +377,10 @@
                 </div>
             </div>
             <div class="articles-navigation">
-                <button class="nav-btn prev-btn" style="background-color: #A87C4D;">
+                <button class="nav-btn prev-btn" id="prev-article" style="background-color: #A87C4D;">
                     <img src="images/prev-icon.png" alt="Previous">
                 </button>
-                <button class="nav-btn next-btn">
+                <button class="nav-btn next-btn" id="next-article">
                     <img src="images/next-icon.png" alt="Next">
             </div>
          </section>
@@ -392,7 +396,7 @@
 
         <div class="footer-bg">
             <!-- contact section -->
-            <section class="contact-me">
+            <section class="contact-me" id="contact">
                 <div class="contact-container">
                     <div class="contact-header">
                         <h2>Contact Me</h2>
