@@ -1,1 +1,8 @@
 .env
+
+static/*.tmp
+static/*.log
+
+!static/css/
+!static/js/
+!static/images/

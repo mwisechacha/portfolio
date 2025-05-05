@@ -174,7 +174,7 @@ header {
 /* hero section */
 .hero {
     height: 100vh; /* full height */
-    background: url('images/hero-header-bg.png') no-repeat center center;
+    background: url("../images/hero-header-bg.png") no-repeat center center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1527,7 +1527,7 @@ header {
 }
 
 .footer-bg{
-    background: url('images/footer-bg.png') no-repeat center center;
+    background: url("../images/footer-bg.png") no-repeat center center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -78,7 +78,7 @@ form.addEventListener('submit', (event) => {
     }
 
     if (isValid) {
-        fetch('http://127.0.0.1:5000/send_email', {
+        fetch('/send_email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
