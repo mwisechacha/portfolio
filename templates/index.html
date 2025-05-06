@@ -24,17 +24,20 @@
         </header>
 
         <!-- hero section -->
-        <section class="hero" id="home" >
-            <div class="profile-pic-container">
-                <img src="{{ url_for('static', filename='images/profile.png') }}" alt="profile picture" class="profile-pic">
-            </div>
-            <div class="hero-text">
-                <h1>Hi, I'm <span>Angela</span></h1>
-                <h2>Data Scientist & ML Engineer</h2>
-                <p>Whether it's building predictive models or uncovering trends, I enjoy turning complex data into clear, actionable outcomes.</p>
-                <a href="#contact" class="btn-primary">Contact Me</a>
-            </div> 
-        </section>
+        <div class="background">
+            <section class="hero" id="home" >
+                <div class="profile-pic-container">
+                    <img src="{{ url_for('static', filename='images/profile.png') }}" alt="profile picture" class="profile-pic">
+                </div>
+                <div class="hero-text">
+                    <h1>Hi, I'm <span>Angela</span></h1>
+                    <h2>Data Scientist & ML Engineer</h2>
+                    <p>Whether it's building predictive models or uncovering trends, I enjoy turning complex data into clear, actionable outcomes.</p>
+                    <a href="#contact" class="btn-primary">Contact Me</a>
+                </div> 
+            </section>
+        </div>
+        
 
         <!-- about section -->
             <section class="about" id="about">
