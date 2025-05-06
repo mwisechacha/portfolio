@@ -179,8 +179,7 @@ header {
     background-repeat: no-repeat;
 }
 .hero {
-    min-height: min(800px, 100vh);
-    height: 100vh;
+    min-height: min(1024px, 100vh);
     max-width: 1280px;
     margin: 0 auto;
     position: relative;
