@@ -27,7 +27,7 @@
         <div class="background">
             <section class="hero" id="home" >
                 <div class="profile-pic-container">
-                    <img src="{{ url_for('static', filename='images/profile2.png') }}" alt="profile picture" class="profile-pic">
+                    <img src="{{ url_for('static', filename='images/profile3.png') }}" alt="profile picture" class="profile-pic">
                 </div>
                 <div class="hero-text">
                     <h1>Hi, I'm <span>Angela</span></h1>
@@ -192,18 +192,15 @@
                             <img src="{{ url_for('static', filename='images/news-icon.png') }}" alt="news-icon">
                             <h3>News Sentiment Analysis</h3>
                         </div>
-                        <a href="#" class="btn-secondary">
+                        <a href="https://colab.research.google.com/drive/1ndL05JffVSO5yadbsrGFgUnZq2GRwyjw?usp=sharing" class="btn-secondary">
                             View Project
                             <img src="{{ url_for('static', filename='images/arrow-icon.png') }}" alt="link-icon">
                         </a>
                     </div>
                     <div class="project-content-main">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id tristique turpis. Praesent ex tellus, 
-                            tincidunt in mauris eu, semper venenatis dolor. Suspendisse erat risus, blandit et commodo at, tempor nec ligula.
-                             Pellentesque imperdiet odio eu fringilla feugiat. Nulla quis nibh in est eleifend malesuada nec eu lorem.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id tristique turpis. Praesent ex tellus, 
-                            tincidunt in mauris eu, semper venenatis dolor. Suspendisse erat risus, blandit et commodo at, tempor nec ligula. 
-                            Pellentesque imperdiet odio eu fringilla feugiat. Nulla quis nibh in est eleifend malesuada nec eu lorem.</p>
+                        <p>This project uses natural language proceesing techniques to identify the emotion behind financial news headline using the NEWS HEADLINE dataset from Kaggle. 
+                            It classifies the headlines as either positive, negative and neutral </p>
+                        <p>Pandas was used to load and clean the dataset, spaCy was used for text preprocessing and traditional machine learning models were used to predict the sentiment.</p>
                     </div>
                     <div class="project-content-tools">
                         <div class="tool">
@@ -269,14 +266,17 @@
                                 <img src="{{ url_for('static', filename='images/translation-icon.png') }}" alt="translation-icon">
                                 <h3>Machine Translation</h3>
                             </div>
-                            <a href="#" class="btn-secondary-footer">
+                            <a href="https://colab.research.google.com/drive/15CMGXji_PAzQI3zoqWEjM2nhvP9Qr91H?usp=sharing" class="btn-secondary-footer">
                                 <img src="{{ url_for('static', filename='images/arrow-icon.png') }}" alt="link-icon">
                             </a>
                         </div>
                         <div class="project-content-main">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id tristique turpis. Praesent ex tellus, 
-                                tincidunt in mauris eu, semper venenatis dolor. Suspendisse erat risus, blandit et commodo at, tempor nec ligula.
-                                Pellentesque imperdiet odio eu fringilla feugiat. Nulla quis nibh in est eleifend malesuada nec eu lorem.</p>
+                            <p>This project implements Neural Machine Translation(NMT) using Sequence-to-Sequence (Seq2Seq) model with 
+                                a Recurrent Neural Network (RNN) for translating English to French.</p>
+                            <p>The methodology included and encoder, decoder, optimizer and evaluation. The Encoder-Decoder structure included a Bidirectional GRU to achieve better predictions.
+                                A bidirectional RNN comes in to help the network see future data. 
+                                This bidirectional GRU-based sequence-to-sequence model does not use attention mechanisms. The translation process involved tokenizing and padding input, 
+                                getting prediction, converting to tokens, converting to words and removingpadding and joining the words. Flask was used in implementing the inference pipeline.</p>
                         </div>
                         <div class="project-content-tools">
                             <div class="tool">
@@ -304,6 +304,9 @@
                             </a>
                         </div>
                         <div class="project-content-main">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id tristique turpis. Praesent ex tellus, 
+                                tincidunt in mauris eu, semper venenatis dolor. Suspendisse erat risus, blandit et commodo at, tempor nec ligula.
+                                Pellentesque imperdiet odio eu fringilla feugiat. Nulla quis nibh in est eleifend malesuada nec eu lorem.</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id tristique turpis. Praesent ex tellus, 
                                 tincidunt in mauris eu, semper venenatis dolor. Suspendisse erat risus, blandit et commodo at, tempor nec ligula.
                                 Pellentesque imperdiet odio eu fringilla feugiat. Nulla quis nibh in est eleifend malesuada nec eu lorem.</p>
